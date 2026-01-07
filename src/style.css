@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-inter text-slate-800 antialiased;
+}
+
+/* 隐藏滚动条但保留功能 (可选) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
